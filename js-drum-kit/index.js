@@ -2,6 +2,7 @@ const handleSound = (event) => {
   const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
   const keyDiv = document.querySelector(`div[data-key="${event.keyCode}"]`);
   if (audio && keyDiv) {
+    audio.currentTime = 0;
     audio.play();
     keyDiv.classList.add('playing');
   } 
