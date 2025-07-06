@@ -40,7 +40,7 @@ html {
     background: rgba(240, 229, 238, 0.774);
     position: absolute;
     top: 50%;
-    transform-origin: 100%;
+    transform-origin: 100% 100%;
     transform: rotate(90deg);
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
@@ -49,3 +49,8 @@ html {
   .hour-hand {
     background-color: red;
   }
+
+  .second-hand {
+    background-color: green;
+  }
+  
