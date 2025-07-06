@@ -8,10 +8,10 @@ const updateClock = () => {
   const hour = d.getHours();
   const minute = d.getMinutes();
   const second = d.getSeconds();
-  
-  const hourWinkle = (hour % 12) * 30 + minute * 0.5;
-  const minuteWinkle = minute * 6;
-  const secondWinkle = second * 6;
+
+  const hourWinkle = ((hour % 12) * 30 + minute * 0.5) + 90;
+  const minuteWinkle = (minute * 6) + 90;
+  const secondWinkle = (second * 6) + 90;
 
   hourHand.style.transform = `rotate(${hourWinkle}deg)`;
   minuteHand.style.transform = `rotate(${minuteWinkle}deg)`;
